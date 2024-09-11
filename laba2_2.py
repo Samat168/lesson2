@@ -1,0 +1,6 @@
+a = input("Введите строку: ")
+b= input("Введите символ для выделения: ")
+words = a.split()
+shortest_word = min(words, key=len)
+highlighted_text = a.replace(shortest_word, f"{b}{shortest_word}{b}")
+print("Результат:", highlighted_text)
